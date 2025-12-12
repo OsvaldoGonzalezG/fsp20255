@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar Sesión - Alke Wallet</title>
+<link rel="stylesheet" href="assets/css/wallet-theme.css"> 
+</head>
+
+<body class="login-body">
+
+<nav class="navbar-main" style="position:fixed; top:0; left:0;">
+    <div class="nav-left">Alke Wallet</div>
+</nav>
+
+<div class="container login-wrapper">
+
+    <form id="loginForm" class="form-card"> 
+        <h3 class="text-center mb-4 mt-2" style="color:#ffffff;">Iniciar Sesión</h3>
+        
+        <label for="emailInput">Correo electrónico</label>
+        <input id="emailInput" type="email" class="input" placeholder="correo@ejemplo.com">
+
+        <label for="passwordInput" style="margin-top:10px;">Contraseña</label>
+        <input id="passwordInput" type="password" class="input" placeholder="••••••••">
+
+        <button type="submit" class="btn-primary w-100">Ingresar</button>
+
+        <p class="text-center" style="color:#a0a0a0; font-size: 14px; margin-top: 15px;">
+            ¿No tienes cuenta? <a href="#" style="color:#6da2fb; text-decoration: none;">Crear cuenta</a>
+        </p>
+        
+        <div id="loginMessage" class="alert-danger" style="display:none; text-align:center;">
+            Datos incorrectos. Intenta nuevamente.
+        </div>
+    </form>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

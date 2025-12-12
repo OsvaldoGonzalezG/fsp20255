@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alke Wallet - Menú Principal</title>
+    <link rel="stylesheet" href="assets/css/wallet-theme.css">
+</head>
+
+<body>
+
+<nav class="navbar-main">
+    <div class="nav-left">Alke Wallet</div>
+
+    <div class="nav-right">
+        <a href="menu.html" class="nav-link active">Inicio</a>
+        <a href="transactions.html" class="nav-link">Movimientos</a> 
+        <a id="logoutBtn" class="nav-link logout" style="cursor:pointer;">Cerrar Sesión</a>
+    </div>
+</nav>
+
+<div class="main-wrapper">
+    <h2 class="title">👋 Bienvenido de nuevo</h2>
+
+    <section class="dashboard-grid">
+
+        <article class="balance-card">
+            <h3>Saldo Disponible</h3>
+            <p class="amount" id="currentBalance">$0</p> 
+        </article>
+
+        <div class="actions-box">
+            <a href="sendmoney.html" class="action-btn">
+                ✈️<br>Enviar Dinero
+            </a>
+
+            <a href="deposit.html" class="action-btn">
+                💼<br>Depositar
+            </a>
+
+            <a href="transactions.html" class="action-btn">
+                📄<br>Movimientos
+            </a>
+        </div>
+    </section>
+
+    <section class="transactions-box">
+        <h4>Últimas Transacciones</h4>
+
+        <ul class="list-group list-group-flush" id="recentTransactions">
+            </ul>
+    </section>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

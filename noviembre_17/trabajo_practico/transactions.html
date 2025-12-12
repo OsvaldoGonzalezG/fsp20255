@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Movimientos</title>
+    <link rel="stylesheet" href="assets/css/wallet-theme.css"> 
+</head>
+
+<body>
+
+<nav class="navbar-main">
+    <div class="nav-left">Alke Wallet</div>
+    <div class="nav-right">
+        <a href="menu.html" class="nav-link">Inicio</a> 
+        <a href="transactions.html" class="nav-link active">Movimientos</a>
+        <a id="logoutBtn" class="nav-link logout" style="cursor:pointer;">Cerrar Sesión</a>
+    </div>
+</nav>
+
+<div class="main-wrapper">
+
+    <h2 class="title">📄 Movimientos</h2>
+
+    <div class="transactions-box">
+
+        <table class="transactions-table">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Tipo</th>
+                    <th>Descripción</th>
+                    <th>Monto</th>
+                </tr>
+            </thead>
+
+            <tbody id="transactionsTableBody">
+                </tbody>
+        </table>
+
+    </div>
+
+    <a href="menu.html" class="back-to-menu">← Volver al Menú Principal</a>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

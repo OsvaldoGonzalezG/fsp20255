@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar Dinero</title>
+    <link rel="stylesheet" href="assets/css/wallet-theme.css"> 
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+
+<nav class="navbar-main">
+    <div class="nav-left">Alke Wallet</div>
+    <div class="nav-right">
+        <a href="menu.html" class="nav-link">Inicio</a>
+        <a href="transactions.html" class="nav-link">Movimientos</a>
+        <a id="logoutBtn" class="nav-link logout" style="cursor:pointer;">Cerrar Sesión</a>
+    </div>
+</nav>
+
+<div class="main-wrapper">
+
+    <h2 class="title">✈️ Enviar Dinero</h2>
+
+    <div class="form-card">
+
+        <form id="transferForm">
+
+            <label for="recipientEmail">Correo del destinatario</label>
+            <input type="email" id="recipientEmail" class="input" placeholder="persona@correo.com" autocomplete="off">
+
+            <label for="transferAmount" style="margin-top:10px;">Monto</label>
+            <input type="number" id="transferAmount" class="input" placeholder="0">
+
+            <div class="balance-info">
+                <small>Saldo disponible:</small>
+                <strong id="balanceDisplaySend">$0</strong>
+            </div>
+
+            <button type="submit" class="btn-primary">Enviar</button>
+
+            <div id="transferMessage" style="margin-top:15px;"></div>
+
+        </form>
+
+    </div>
+
+    <a href="menu.html" class="back-to-menu">← Volver al Menú Principal</a>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
