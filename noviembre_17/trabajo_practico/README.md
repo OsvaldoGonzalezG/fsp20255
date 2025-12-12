@@ -1,12 +1,12 @@
 # fsp20255
 
-# 🏦 Alke Wallet (Simulador de Billetera Digital)
+# 🏦 Alke Wallet (Billetera Digital)
 
-Este proyecto simula la interfaz y las funcionalidades básicas de una billetera digital (Wallet) utilizando **HTML, CSS (Tema Oscuro)** y **JavaScript (JQuery)**. El objetivo principal fue crear una experiencia de usuario moderna y consistente, implementando la lógica de control de saldo y registro de transacciones.
+Este proyecto simula la interfaz y las funcionalidades básicas de una billetera digital (Wallet) utilizando **HTML, CSS** y **JavaScript (JQuery)**. El objetivo principal fue crear una experiencia de usuario moderna y consistente, implementando la lógica de control de saldo y registro de transacciones.
 
 ## ✨ Características Implementadas
 
-* **Tema Oscuro (Dark Theme):** Diseño visual completo en modo oscuro (`wallet-theme.css`) aplicado consistentemente en todas las vistas.
+* **Tema Oscuro:** Diseño visual completo en modo oscuro (`wallet-theme.css`) aplicado consistentemente en todas las vistas.
 * **Control de Sesión:** Implementación básica de Login/Logout y restricción de acceso a vistas sin autenticación mediante `sessionStorage`.
 * **Gestión de Saldo y Persistencia:** El saldo (`$1.500.000` inicial) se gestiona y actualiza a través de `sessionStorage`, manteniéndose entre páginas.
 * **Registro de Transacciones:** Se registran movimientos de **Depósito** y **Transferencia**, incluyendo la fecha y el tipo de operación.
