@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-light bg-white shadow-sm mb-4">
+        <a class="navbar-brand font-weight-bold text-primary" href="#">Wallet</a>
+        <button id="logoutBtn" class="btn btn-outline-secondary">Cerrar Sesión</button>
+    </nav>
+    
+    <div class="container py-4">
+        <h1 class="mb-4 text-center">💸 Tu Billetera</h1>
+        
+        <div class="card p-4 mb-4 shadow-lg text-center">
+            <h2 class="text-muted">Balance Actual:</h2>
+            <p id="balance" class="display-3 font-weight-bolder text-primary">$0.00</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-5 mb-4">
+                <div class="card p-4 shadow-sm h-100">
+                    <h4 class="mb-4">Realizar Movimiento</h4>
+                    <label for="amount" class="font-weight-bold">Monto:</label>
+                    <input type="number" id="amount" class="form-control mb-3" placeholder="Ej: 5000" min="1">
+                    
+                    <div id="messageArea" class="my-3"></div> <div class="d-flex justify-content-between mt-3">
+                        <button id="depositBtn" class="btn btn-success flex-fill mr-2">Depositar</button>
+                        <button id="withdrawBtn" class="btn btn-danger flex-fill ml-2">Retirar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 mb-4">
+                <div class="card p-4 shadow-sm h-100">
+                    <h4 class="mb-4">Historial de Transacciones</h4>
+                    
+                    <table class="table table-hover table-sm">
+                        <thead>
+                            <tr>
+                                <th>Tipo</th>
+                                <th class="text-right">Monto</th>
+                                <th>Fecha</th>
+                            </tr>
+                        </thead>
+                        <tbody id="transactionHistory">
+                            <tr>
+                                <td colspan="3" class="text-center text-muted">Aún no hay transacciones.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

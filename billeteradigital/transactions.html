@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Últimos Movimientos</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<style>
+body {
+    padding: 35px;
+    background: #e9ecef;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 20px;
+    border: none;
+    background: white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    overflow: hidden;
+}
+
+.header-section {
+    background: linear-gradient(135deg, #3a3d98, #6a52c6);
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+}
+
+.header-section h2 {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.mov-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.mov-type {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.mov-amount {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.mov-row:last-child {
+    border-bottom: none;
+}
+
+.red { color: #d9534f; }
+.green { color: #28a745; }
+.blue { color: #0275d8; }
+
+.icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.btn-main {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="header-section">
+            <h2>Últimos Movimientos</h2>
+        </div>
+
+        <div class="mov-row">
+            <span class="mov-type red">
+                💳 Compra en línea
+            </span>
+            <span class="mov-amount red">- $30.000</span>
+        </div>
+
+        <div class="mov-row">
+            <span class="mov-type blue">
+                💰 Depósito
+            </span>
+            <span class="mov-amount blue">+ $150.000</span>
+        </div>
+
+        <div class="mov-row">
+            <span class="mov-type green">
+                🔄 Transferencia recibida
+            </span>
+            <span class="mov-amount green">+ $75.000</span>
+        </div>
+
+        <div class="mov-row">
+            <span class="mov-type red">
+                💳 Compra en línea
+            </span>
+            <span class="mov-amount red">- $550.000</span>
+        </div>
+
+        <div class="mov-row">
+            <span class="mov-type blue">
+                💰 Depósito misma cuenta
+            </span>
+            <span class="mov-amount blue">+ $1.050.000</span>
+        </div>
+
+        <div class="mov-row">
+            <span class="mov-type green">
+                🔄 Transferencia recibida
+            </span>
+            <span class="mov-amount green">+ $757.500</span>
+        </div>
+
+    </div>
+
+    <div class="mt-4 text-center">
+        <a href="menu.html" class="btn btn-secondary btn-lg btn-main">
+            Volver al Menú Principal
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

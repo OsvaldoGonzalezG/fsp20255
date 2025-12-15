@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="mi-formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+        <button type="button" onclick="mostrarDatos()">Mostrar Datos</button>
+</form>
+
+<button id="myButton" onclick="decir_hola()">Haz clic o doble clic aquí</button>
+
+<script>
+        const button = document.getElementById('myButton');
+        button.addEventListener('click', () => {
+        console.log('Has hecho clic en el botón');
+        });
+
+        function decir_hola(){
+            console.log('Has hecho clic en el botón');
+        }
+        button.addEventListener('dblclick', () => {
+        console.log('Hola mundo!');
+        });
+</script>
+
+
+
+<script>
+        function mostrarDatos() {
+            // Obtener los valores de los campos de entrada
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            // Mostrar los datos en la consola o realizar alguna acción con ellos
+            console.log('Nombre:', nombre);
+            console.log('Email:', email);
+            }
+</script>
+</body>
+</html>

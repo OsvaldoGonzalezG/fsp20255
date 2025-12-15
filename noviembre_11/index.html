@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conociendo jquery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">    
+</head>
+<body>
+    <!-- contenido del sitio web-->
+     <div class="container text-center mt-3">
+         <h1 id="Titulo">Texto Original</h1>
+         <button class="btn btn-outline-primary" id="cambio">cambiar texto</button>
+
+         <h2></h2>
+         <p>prueba</p>
+         <h2></h2>
+    </div>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        // esta instrucción nos asegura que la carga de la página se halla completado.
+        $(document).ready(function(){
+
+            $('#cambio').click(function(){
+                let antiguo=$('#Titulo').text();
+
+                $('#Titulo').text('Texto cambiado con Jquery');
+
+                $('h2'). text(antiguo);
+            });
+
+        });
+
+    </script>
+
+    <style>
+        h2{
+            color: aqua;
+        }
+    </style>
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

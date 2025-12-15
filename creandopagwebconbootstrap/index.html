@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Bootstrap Final</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mi Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto"> 
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container my-5">
+        
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Bienvenido a Mi Sitio Web con Bootstrap</h1>
+                <button class="btn btn-danger btn-lg" type="button">
+                    Comenzar Ahora
+                </button>
+            </div>
+        </div>
+
+        <hr> <h2 class="mt-5">Ejemplo de Botones Estilizados</h2>
+        <div class="mb-4">
+            <button type="button" class="btn btn-primary">Ejemplo 1</button>
+            <button type="button" class="btn btn-success">Ejemplo 2</button>
+            <button type="button" class="btn btn-danger">Ejemplo 3</button>
+            <button type="button" class="btn btn-warning">Ejemplo 4</button>
+        </div>
+        
+        <hr> <h2 class="mt-5">Formulario de Contacto</h2>
+        <form action="" method="POST">
+            
+            <div class="mb-3">
+                <label for="nombreInput" class="form-label">Tu Nombre</label>
+                <input type="text" class="form-control" id="nombreInput" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="emailInput" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="ejemplo@dominio.com" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="mensajeTextarea" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensajeTextarea" rows="4" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <button type="submit" class="btn btn-dark">Enviar Mensaje</button>
+            </div>
+            
+        </form>
+        
+    </div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

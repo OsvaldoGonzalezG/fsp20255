@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <p class="texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, mollitia.
+        </p>
+
+        <button id="b1">Desaparecer</button><button id="b2">Aparecer</button>
+    </div>
+        <a href="#">ClickMe!!!></a>
+        <section id="seccionContacto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ad tempore voluptas quaerat fuga aliquid sapiente consectetur pariatur, at quibusdam similique, numquam labore. Laudantium impedit adipisci ipsa quos corporis quod suscipit unde dolorum quis fuga. Id necessitatibus a veniam, aperiam cum fugit, blanditiis nobis maxime non deleniti in. Saepe quidem quos incidunt ut? Laborum repudiandae ab aspernatur obcaecati nemo nostrum dolore, sunt vel eos corporis excepturi temporibus quae magnam quidem. Dolorum, est blanditiis? Numquam, corrupti. Fuga, ipsam vel? Quod porro ad dolorum, velit veritatis, molestiae error voluptate alias vitae, reprehenderit itaque nihil eligendi! Iure nostrum assumenda, consequuntur blanditiis cupiditate impedit.
+        </section>
+
+
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#b1').on("click", function(){
+                $('p.texto').slideUp(1000, function(){
+                    alert('termino la animación')
+                }); // función que oculta el elemento
+
+            });
+
+             $('#b2').on("click", function(){
+                $('p.texto').slideDown(1000); // función qye muestra el elemento
+
+            });
+        });
+
+
+        $('a').click( function(e) {
+            // asociamos la animacion al click en un elemento <a>
+            $('html, body').animate({
+            scrollTop: $("#seccionContacto").offset().top
+            }, 2000);
+        });
+    </script>
+
+
+            
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+</body>
+</html>

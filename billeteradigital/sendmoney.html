@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enviar Dinero</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background: #eef1f5;
+            padding: 30px;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        .container {
+            max-width: 420px;
+            background: #ffffff;
+            padding: 35px 28px;
+            border-radius: 18px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.10);
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #343a40;
+        }
+
+        h3 {
+            margin-top: 25px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #495057;
+        }
+
+        #searchContact {
+            border-radius: 10px;
+        }
+
+        .list-group-item {
+            border: none;
+            padding: 15px 18px;
+            border-radius: 12px !important;
+            margin-bottom: 10px;
+            background: #f7f7f9;
+            transition: 0.15s ease;
+        }
+
+        .list-group-item:hover {
+            background: #ececf1;
+        }
+
+        .contact-name {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .contact-details {
+            color: #6c757d;
+            font-size: 0.85rem;
+        }
+
+        .btn {
+            width: 100%;
+            border-radius: 12px;
+            padding: 12px;
+            font-size: 1.05rem;
+        }
+
+        .btn-primary {
+            background-color: #4b61d1;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #3f54bd;
+        }
+
+        .btn-success {
+            font-weight: bold;
+            background-color: #2ecc71;
+            border: none;
+        }
+
+        .btn-success:hover {
+            background-color: #27ae60;
+        }
+
+        .btn-secondary {
+            margin-top: 15px;
+            background-color: #6c757d;
+            border: none;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Enviar Dinero</h2>
+
+    <form>
+        <label for="searchContact">Buscar en la agenda de transferencias:</label>
+        <input type="text" class="form-control mb-3" id="searchContact" placeholder="Buscar contacto…">
+
+        <button type="button" class="btn btn-primary mb-3">
+            + Agregar nuevo contacto
+        </button>
+
+        <h3>Contactos</h3>
+
+        <ul id="contactList" class="list-group">
+
+            <li class="list-group-item">
+                <div>
+                    <span class="contact-name">Pepe Grillo</span><br>
+                    <span class="contact-details">CBU: 00055688 — Alias: Pepe.Grillo — Banco Imaginación</span>
+                </div>
+            </li>
+
+            <li class="list-group-item">
+                <div>
+                    <span class="contact-name">Juanito Gomez</span><br>
+                    <span class="contact-details">CBU: 000115678 — Alias: Juanito.gomez — Banco Pensante</span>
+                </div>
+            </li>
+
+        </ul>
+
+        <button type="button" class="btn btn-success mt-4">
+            Enviar dinero
+        </button>
+    </form>
+
+    <a href="menu.html" class="btn btn-secondary">Volver al Menú Principal</a>
+
+</div>
+
+</body>
+</html>

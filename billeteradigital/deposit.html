@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Depositar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            text-align: center;
+            color: #343a40;
+        }
+        
+        
+        .btn-full-width {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <h2>💰 Depositar</h2>
+        
+        <form>
+            <div class="form-group">
+                <label for="depositAmount" class="font-weight-bold">Monto a depositar:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span> 
+                    </div>
+                    <input type="number" class="form-control" id="depositAmount" placeholder="Ingrese Cantidad (Ej: 10.000)">
+                </div>
+            </div>
+            
+            <div class="d-flex justify-content-between mt-3">
+                
+                <button type="submit" class="btn btn-success flex-fill mr-2">
+                    Realizar depósito
+                </button>
+                
+                <a href="menu.html" class="btn btn-secondary flex-fill ml-2">
+                    Volver al Menú Principal
+                </a>
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>

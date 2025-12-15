@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo">este es el titulo original</h1>
+        <button onclick="cambio();" class="btn btn-primary">Cambiar Titulo</button>
+    </div>
+    <!-- primera forma de cargar un script de javascript en mi html, con un archivo externo-->
+    <script src="asstets/js/functions.js"></script>
+
+    <!-- segunda forma de cargar un script de javascript en mi html, directo en el html-->
+    <script>
+        /*
+        acá es donde vamos a escribir nuestro código
+        en javascript
+        */
+
+
+        let x=4; // declaración + asignación
+        let y; // solo declaración
+
+        y=17; //asignación
+
+        //let suma= x+y; // declaración +asignación
+
+        const pi=3.14;
+
+        // console.log = es una instrucción/función para escribir en la consola del navegador
+        //console.log('la suma de '+x+'+'+y+' es: '+suma)
+
+        //alert('ESTE ES UN MENSAJE')
+
+        //confirm('Vamos a realizar una suma');
+
+        //x= parseInt(prompt('Ingrese el primer valor:'))
+        //y= parseInt(prompt('Ingrese el segundo valor:'))
+
+        //let suma = x+y; // declaración +asignación
+
+        //console.log('la suma de sus valores es:'+suma);
+
+        console.log('el valor original x es:'+x)
+        let incremento1=x+1;
+        console.log('el valor incrementado en 1 de x es:'+incremento1)
+        //let incremento2=
+        x++;
+        console.log('pero tambien el valor incrementado en 1 de x es:'+x)
+
+
+    </script>
+
+    <script>
+        function cambio(){
+            document.getElementById('titulo').textContent='este es el nuevo titulo'
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
